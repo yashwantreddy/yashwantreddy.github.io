@@ -6,14 +6,14 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: Committed towards better future
-description: This is a place where I write freely and try to uncomplicate the complicated for myself and everyone else through Python code.
+title: Data Science and Memes
+description: This is a place where I write freely and try to meme up the complicated stuff and un-complicate it for myself and everyone else.
 github_username: amaarora
 
 # Email and twitter are optional:
-email: aman.arora0210@gmail.com.au
-twitter_username: amaarora
-linkedin_username: aroraaman
+email: yjanaky@gmail.com
+twitter_username: yashwantreddy
+linkedin_username: ash-jankay
 
 # Set this to true to get LaTeX math equation support
 use_math: true
