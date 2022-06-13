@@ -2,7 +2,7 @@
 
 Read more about Fama [here](https://fama.io)
 
-## What I was
+## Before Fama
 
 I began my Data Science journey back in 2018. I studied math and `python` through YouTube and a bunch of other free online resources. Using this newly acquired knowledge, I tried to get into a Data Science bootcamp called [Galvanize](https://www.galvanize.com). I failed the exam on my first try. I'm glad I did because that taught me my first lesson in Data Science-
 
@@ -12,7 +12,17 @@ Earlier, I was staring at YouTube video and blogposts, trying to memorize differ
 
 On my second attempt at the Galvanize admission test, I was able to use the different methods that I learnt by practicing over the last couple of weeks.
 
-## The Rise
+### **The Seed**
 
-After my successful 3-month bootcamp at Galvanize, I discovered my yearning towards **Natural Language Processing** or **NLP** in short. NLP dealt with
+After my successful 3-month bootcamp at Galvanize, I discovered my yearning towards **Natural Language Processing** or **NLP** in short. NLP is basically text processing, i.e., teaching AI models how to interpret text. 
+
+NLP was under-utilized back in 2018 (and is still kinda in a few domains like the energy generation industry), so an added benefit was that I could learn and continue to grow in this field.
+
+### **The Sprout**
+
+My first job was at a startup called [Proximate.io](https://www.crunchbase.com/organization/proximate-io), where I was working on NLP based Data Science pipelines which dealt with classifying emails into hot/warm/damp/cold sales leads.
+
+I worked here (remotely) for around 4 months, and had to leave when we weren't able to secure enough funding to continue.
+
+### The **Seedling** 
 
