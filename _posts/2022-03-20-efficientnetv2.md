@@ -1,12 +1,13 @@
-# EfficientNet vs. EfficientNetV
+# EfficientNet vs. EfficientNetV2
 
-tldr (^) (stands for “too long, didn’t read”; takes you directly to the summary)
+1. TOC 
+{:toc}
 
 ## Why EfficientNet?
 
 Note: EfficientNet and EfficientNetV1 refer to the same thing
 
-EfficientNet paper here.
+EfficientNet paper [here](https://arxiv.org/abs/1905.11946).
 
 In the above fig-1, EfficientNets significantly outperform other ConvNets (Convolutional Neural Networks). EfficientNet-B7, which is the
 EfficientNet with the highest number of Parameters, achieved new state of the art with 84.4% top-1 accuracy outperforming the previous SOTA
@@ -14,38 +15,35 @@ EfficientNet with the highest number of Parameters, achieved new state of the ar
 
 From the paper:
 
-```
-EfficientNet-B7 achieves state- of-the-art 84.4% top-1 / 97.1% top-5 accuracy on ImageNet, while being 8.4x smaller and 6.1x
+> EfficientNet-B7 achieves state- of-the-art 84.4% top-1 / 97.1% top-5 accuracy on ImageNet, while being 8.4x smaller and 6.1x
 faster on inference than the best existing ConvNet. Our EfficientNets also transfer well and achieve state-of-the-art accuracy on
 CIFAR-100 (91.7%), Flowers (98.8%), and 3 other transfer learning datasets, with an order of magnitude fewer parameters.
-```
+
 ## How does EfficientNet pull this off?
 
-The main idea introduced in the research paper is Compound Scaling.
+The main idea introduced in the research paper is **Compound Scaling**.
 
 ### Compound Scaling:
 
 Keeping the network architecture constant, we can scale a DNN (Deep Neural Network) in one of 3 ways:
 
 
-```
-Increasing the width (more channels)
-Increasing the depth (more convolutions)
-Increasing the resolution
-```
+- Increasing the width (more channels)
+- Increasing the depth (more convolutions)
+- Increasing the resolution
+
 In fig-2, EfficientNet V1 proposes Compound Scaling - combining the 3 different ways of scaling. Compound Scaling is basically to scale all
 three dimensions while maintaining a balance between all dimensions of the network, i.e. maintaining a fixed ratio.
 
 From the paper:
 
-```
-In this paper, we want to study and rethink the process of scaling up ConvNets. In particular, we investigate the central
+> In this paper, we want to study and rethink the process of scaling up ConvNets. In particular, we investigate the central
 question: is there a principled method to scale up ConvNets that can achieve better accuracy and efficiency? Our empirical
 study shows that it is critical to balance all dimensions of network width/depth/resolution, and surprisingly such balance can be
 achieved by simply scaling each of them with constant ratio. Based on this observation, we propose a simple yet effective
 compound scaling method. Unlike conventional practice that arbitrary scales these factors, our method uniformly scales network
 width, depth, and resolution with a set of fixed scaling coefficients.
-```
+
 This main idea of Compound Scaling really set apart EfficientNets from its predecessors. And intuitively, this idea of compound scaling makes
 sense too because if the input image is bigger (input resolution), then the network needs more layers (depth) and more channels (width) to
 capture more fine-grained patterns on the bigger image.
@@ -56,15 +54,10 @@ than their baselines.
 
 The authors of EfficientNet architecture ran a lot of experiments scaling depth, width and image resolution and made two main observations:
 
-```
-Scaling up any dimension of network width, depth, or resolution improves accuracy, but the accuracy gain diminishes for bigger
-models.
-```
-```
-In order to pursue better accuracy and efficiency, it is critical to balance all dimensions of network width, depth, and resolution
+> Scaling up any dimension of network width, depth, or resolution improves accuracy, but the accuracy gain diminishes for bigger
+models. In order to pursue better accuracy and efficiency, it is critical to balance all dimensions of network width, depth, and resolution
 during ConvNet scaling.
-```
-```
+
 Depth
 ```
 Scaling network depth (number of layers), is the most common way used by many ConvNets.
