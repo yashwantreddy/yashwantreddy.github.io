@@ -7,8 +7,8 @@
 # https://learnxinyminutes.com/docs/yaml/
 
 title: Data Science and Memes
-description: This is a place where I write freely and try to meme up the complicated stuff and un-complicate it for myself and everyone else.
-github_username: amaarora
+description: This is a place where I try to meme up the complicated stuff and un-complicate it for myself and everyone else.
+github_username: yashwantreddy
 
 # Email and twitter are optional:
 email: yjanaky@gmail.com
@@ -24,7 +24,7 @@ use_math: true
 # Everything below here can be ignored, unless you want to change the theme entirely
 theme: jekyll-theme-minimal
 plugins:
-  # - jekyll-feed
+  - jekyll-feed
   - jekyll-gist
   - jekyll-octicons
   - jekyll-github-metadata
